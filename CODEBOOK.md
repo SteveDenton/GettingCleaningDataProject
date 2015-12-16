@@ -21,7 +21,7 @@ The following Input Files are used from the dataset:
 * Headers for the X values were extracted from the features.txt file and applied to both test and train datasets.
 * Next, test and train data sets were merged into one. For readability column names of Subject and Activity were added for the subject and y values respectively.
 * These headers were used to filter out only means and standard deviations from the set of observations. 
-* An aggregation was performed on all columns of the data frame, grouping by SubjectID and Activity. 
+* An aggregation was performed on all columns of the data frame, grouping by Subject and Activity. 
 * This yielded 180 observations of the 68 variables.
 * An activity name was assigned to each of the levels in the Activity column, pulled from the activity_labels.txt file.
 * When the script run_analysis.R is executed, it will output a text file (named tidy.txt) in the users current working directory.
