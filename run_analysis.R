@@ -69,4 +69,4 @@ eData$Subject  <- as.factor(eData$Subject)
 ##        with the average of each variable for each activity and each subject.
 tData <- aggregate(eData, by=list(Subject=eData$Subject, Activity = eData$Activity), mean)
 tData <- tData[order(tData$Subject,tData$Activity),]
-write.table(tData, file = "tidy.txt", row.names = FALSE)
+write.csv(tData, file = "tidy.csv", row.names = FALSE)
